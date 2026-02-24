@@ -23,9 +23,18 @@
         <section class="section2 py-3  flex justify-between items-center w-[75%] mx-auto max-w-[1150px]">
             <img src="https://assets.nicepagecdn.com/d2cc3eaa/6313535/images/logo-smart3.png" alt="" width="150px">
             <div class="flex items-center gap-[4vw]">
-                <div class="dropdown relative ">
-                    <button class="dropdown-btn md:hidden"><i class="text-[30px] fa-sharp fa-solid fa-bars"></i></button>
-                    <ul class="dropdown-content max-md:absolute max-md:bg-black max-md:text-white left-0 top-0 max-md:hidden flex md:flex-row flex-col items-center gap-[4vw]">
+                <div class="dropdown ">
+                    <!--desktop-->
+                    <ul class="dropdown-content hidden lg:flex space-x-6">
+                        <li><a class="" href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <!--mobil-->
+                    <input type="checkbox" id="menu-toggle" class="hidden peer">
+                    <label for="menu-toggle" class="lg:hidden cursor-pointer text-2xl"><i class="text-[30px] fa-sharp fa-solid fa-bars"></i></label>
+                    <ul class="dropdown-content max-lg:absolute max-lg:bg-black max-lg:text-white left-0 top-0 hidden peer-checked:block lg:hidden pb-4 space-y-2 flex flex-col items-center gap-[4vw] w-[250px] h-[100vh] text-center ">
+                        <li><i class="w-[100%] p-5 text-[30px] text-end fa-solid fa-xmark"></i></li>
                         <li><a class="" href="#">Home</a></li>
                         <li><a href="#">Pages</a></li>
                         <li><a href="#">Contact Us</a></li>
