@@ -36,7 +36,21 @@
                     <ul class="dropdown-content max-lg:absolute max-lg:bg-black max-lg:text-white left-0 top-0 hidden peer-checked:block lg:hidden pb-4 space-y-2 flex flex-col items-center gap-[4vw] w-[250px] h-[100vh] text-center ">
                         <li><i class="w-[100%] p-5 text-[30px] text-end fa-solid fa-xmark"></i></li>
                         <li><a class="" href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li>
+                            <input type="checkbox" id="menu-toggle" class="hidden peer">
+                            <label for="menu-toggle" class="lg:hidden cursor-pointer text-2xl">
+                                Pages
+                            </label>
+                            <ul class="hidden peer-checked:block lg:hidden">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+
+                        </li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
