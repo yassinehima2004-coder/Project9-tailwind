@@ -20,20 +20,29 @@
             </div>
 
         </section>
-        <section class="section2 py-3  flex justify-between items-center w-[75%] mx-auto max-w-[1150px]">
+        <section class="section2 z-50 py-3  flex justify-between items-center w-[75%] mx-auto max-w-[1150px]">
             <img src="https://assets.nicepagecdn.com/d2cc3eaa/6313535/images/logo-smart3.png" alt="" width="150px">
             <div class="flex items-center gap-[4vw]">
                 <div class="dropdown ">
                     <!--desktop-->
-                    <ul class="dropdown-content hidden lg:flex space-x-6">
-                        <li><a class="" href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                    <nav class="dropdown-content hidden lg:flex gap-[3vw]">
+                        <a class="font-bold hover:text-cyan-700" href="#">Home</a>
+                        <div class="relative group">
+                            <button class="font-bold hover:text-cyan-700">Pages ▾</button>
+
+                            <div class="absolute left-[-25%] w-40 bg-white text-black rounded shadow-md hidden  group-hover:block transition duration-200">
+
+                            <a href="#" class="block px-4 py-2 hover:bg-cyan-700 hover:text-white font-bold">About Us</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-cyan-700 hover:text-white font-bold">Our team</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-cyan-700 hover:text-white font-bold">Our Service</a>
+                            </div>
+                        </div>
+                        <a class="font-bold hover:text-cyan-700" href="#">Contact Us</a>
+                    </nav>
                     <!--mobil-->
                     <input type="checkbox" id="menu-toggle" class="hidden peer">
                     <label for="menu-toggle" class="lg:hidden cursor-pointer text-2xl"><i class="text-[30px] fa-sharp fa-solid fa-bars"></i></label>
-                    <ul class="dropdown-content max-lg:absolute max-lg:bg-black max-lg:text-white left-0 top-0 hidden peer-checked:block lg:hidden pb-4 space-y-2 flex flex-col items-center gap-[4vw] w-[250px] h-[100vh] text-center ">
+                    <ul class="dropdown-content absolute top-0 left-0 h-full w-64 bg-black text-white transform -translate-x-full peer-checked:translate-x-0 transition duration-300 p-6 space-y-4 md:hidden z-100">
                         <li><i class="w-[100%] p-5 text-[30px] text-end fa-solid fa-xmark"></i></li>
                         <li><a class="" href="#">Home</a></li>
                         <li>
@@ -53,6 +62,7 @@
                         </li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
+                    <label for="menu-toggle" class="absolute inset-0 bg-black/60 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition duration-300 lg:hidden z-90"></label>
                 </div>
                 <button><i class="text-[20px] fa-solid fa-magnifying-glass"></i></button>
             </div>
@@ -60,5 +70,9 @@
         </section>
     </header>
     </div>
+    <main class="bg-[url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg)] bg-cover bg-no-repeat bg-center h-[100vh]">
+        
+        <h1 class="text-center text-6xl text-white font-bold pt-[300px]">Changez votre vie pour le meilleur</h1>
+    </main>
 </body>
 </html>
